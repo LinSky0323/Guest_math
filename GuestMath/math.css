@@ -1,0 +1,65 @@
+body{
+    background:linear-gradient(360deg,white,aqua);
+    height:100vh;
+}
+.container{
+    background-color:white;
+    border-radius:20px;
+    max-width:500px;
+    margin:50px auto;
+    padding:20px;
+}
+.inner{
+    margin:0 auto;
+}
+.title{
+ font-size:40px;
+ font-weight:700;
+ text-align: center;
+}
+.input{
+    position:relative;
+    left:20px;
+    display:flex;
+    justify-content:space-between;
+    max-width: 460px;
+    background-color:rgb(214, 211, 211);
+    border:0;
+    border-radius:20px;
+}
+.inputText{
+    background-color:transparent;
+    border:0;
+    padding:5px;
+    outline:0;
+    flex:1;
+}
+.add{
+    border-radius:10px;
+    background-color:rgb(41, 41, 172);
+    color:white;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+}
+.list{
+    position:relative;
+    left:20px;
+    background-color: aquamarine;
+    max-width: 420px;
+    min-height:400px;
+  
+}
+.item{
+    
+    max-width:420px;
+    background-color:aquamarine;
+    font-size:20px;
+    font-weight:500;
+}
+.key{
+    margin-right: 20px;
+}
+.an{
+    margin-left:20px;
+}

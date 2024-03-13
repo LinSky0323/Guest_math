@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>猜數字</title>
+    <link rel="stylesheet" href="math.css" />
+    <script src="math.js" defer></script>
+  </head>
+
+  <body onclick="click1()">
+    <div class="container" id="container">
+      <div class="inner" id="inner">
+        <p class="title">Guest Number</p>
+        <form class="input" id="input" onclick="Click(event)">
+          <input
+            type="text"
+            class="inputText"
+            id="inputText"
+            value="請輸入4個不同的數字"
+          />
+          <button class="add" id="add">送出</button>
+        </form>
+        <ol class="list" id="list">
+          <!--  試看範例
+            <li class="item">
+            <span class="key" id="key">1234</span>
+            <span class="an" id="an">3A1B</span>
+          </li>-->
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
