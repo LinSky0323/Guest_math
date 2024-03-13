@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Cat search</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="index.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <p class="title">Cat Search</p>
+      <div class="selector_container">
+        <div class="selector_wrapper">
+          <button id="type_selector" class="type_selector">請選擇品種</button>
+          <div id="type_item" class="type_item hidden">
+            <div id="type_item_options" class="type_item_options">
+              <input type="checkbox" />
+              <label class="options">品種一</label>
+            </div>
+          </div>
+        </div>
+        <div class="selector_wrapper">
+          <select id="order_selector" class="order_selector">
+            <option value="DESC">由新到舊</option>
+            <option value="ASC">由舊到新</option>
+            <option value="RAND">隨機</option>
+          </select>
+        </div>
+      </div>
+      <div class="image_grid">
+        <div class="col" id="col1">
+          <!-- <div class="card">
+            <img
+              src="https://cdn2.thecatapi.com/images/0SxW2SQ_S.jpg"
+              class="card_image"
+            />
+            <p>York Chocolate</p>
+          </div> -->
+        </div>
+        <div class="col" id="col2">
+          <!-- <div class="card">
+            <img
+              src="https://cdn2.thecatapi.com/images/7_rjG2-pc.jpg"
+              class="card_image"
+            />
+            <p>York Chocolate</p>
+          </div> -->
+        </div>
+        <div class="col" id="col3">
+          <!-- <div class="card">
+            <img
+              src="https://cdn2.thecatapi.com/images/7pCnjXd47.jpg"
+              class="card_image"
+            />
+            <p>York Chocolate</p>
+          </div> -->
+        </div>
+      </div>
+      <button id="load_more" class="load_more">Load more...</button>
+    </div>
+    <div id="drawer" class="drawer">
+      <img
+        src="https://cdn2.thecatapi.com/images/0SxW2SQ_S.jpg"
+        class="drawer_image"
+        id="drawer_image"
+      />
+      <div class="item_name" id="item_name">
+        <h3 class="item__name" id="item__name">Chocolate</h3>
+        <div class="item_origin" id="item_origin">
+          <img src="location_icon.svg" alt="" class="origin_image" />
+          <span id="origin_text">korea</span>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div id="item_box1" class="item_box1">
+        <div id="item_a_w" class="item_a_w">
+          <p class="item_a_w_num" id="item_age_num">12-17</p>
+          <p class="item_a_w_lable">年齡</p>
+        </div>
+        <div class="vertical_line"></div>
+        <div id="item_a_w" class="item_a_w">
+          <p class="item_a_w_num" id="item_weight_num">5-9</p>
+          <p class="item_a_w_lable">公斤</p>
+        </div>
+        <div id="item_a_w" class="item_a_w"></div>
+      </div>
+
+      <div class="line"></div>
+
+      <div id="item_box2" class="item_box2">
+        <p id="personality" class="personality">性格</p>
+        <div id="personality_tag" class="personality_tag">
+          <span class="tags">親人</span>
+          <span class="tags">友善</span>
+          <span class="tags">活潑</span>
+          <span class="tags">智慧</span>
+        </div>
+      </div>
+      <div class="item_box3" id="item_box3">
+        <!-- <div id="property" class="property">
+          <p class="property_title" id="property_title">智力</p>
+          <div id="property_line" class="property_line">
+            <div id="property_line_full" class="property_line_full"></div>
+          </div>
+        </div>
+        <div id="property" class="property">
+          <p class="property_title" id="property_title">體力</p>
+          <div id="property_line" class="property_line">
+            <div id="property_line_full" class="property_line_full"></div>
+          </div>
+        </div>
+        <div id="property" class="property">
+          <p class="property_title" id="property_title">精神</p>
+          <div id="property_line" class="property_line">
+            <div id="property_line_full" class="property_line_full"></div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
